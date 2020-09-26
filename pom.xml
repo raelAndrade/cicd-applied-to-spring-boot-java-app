@@ -27,8 +27,8 @@
 		<maven.deploy.skip>true</maven.deploy.skip>
 		
 		<!-- GitHub OAuth token & server -->
-		<github.global.server>github</github.global.server>
-        <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token>
+<!-- 		<github.global.server>github</github.global.server> -->
+<!--         <github.global.oauth2Token>${env.GITHUB_OAUTH_TOKEN}</github.global.oauth2Token> -->
 		
 		<!-- Useful for Heroku Deployment -->
         <full-artifact-name>target/${project.artifactId}-${project.version}.jar</full-artifact-name>
@@ -49,6 +49,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>cicd-applied-to-spring-boot-java-app</finalName>
 		<plugins>
 		
 			<plugin>
